@@ -1,15 +1,15 @@
 create table logs
 (
     log_index bigint,
-    transaction_hash varchar(66),
+    transaction_hash bytea,
     transaction_index bigint,
-    address varchar(42),
-    data text,
-    topic0 varchar(66),
-    topic1 varchar(66),
-    topic2 varchar(66),
-    topic3 varchar(66),
+    address bytea,
+    data bytea,
+    topic0 bytea,
+    topic1 bytea,
+    topic2 bytea,
+    topic3 bytea,
     block_timestamp timestamp,
     block_number bigint,
-    block_hash varchar(66)
+    block_hash bytea
 );

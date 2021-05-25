@@ -1,20 +1,20 @@
 create table transactions
 (
-    hash varchar(66),
+    hash bytea,
     nonce bigint,
     transaction_index bigint,
-    from_address varchar(42),
-    to_address varchar(42),
+    from_address bytea,
+    to_address bytea,
     value numeric(38),
     gas bigint,
     gas_price bigint,
-    input text,
+    input bytea,
     receipt_cumulative_gas_used bigint,
     receipt_gas_used bigint,
-    receipt_contract_address varchar(42),
-    receipt_root varchar(66),
+    receipt_contract_address bytea,
+    receipt_root bytea,
     receipt_status bigint,
     block_timestamp timestamp,
     block_number bigint,
-    block_hash varchar(66)
+    block_hash bytea
 );

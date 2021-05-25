@@ -1,15 +1,15 @@
 create table traces
 (
-    transaction_hash varchar(66),
+    transaction_hash bytea,
     transaction_index bigint,
-    from_address varchar(42),
-    to_address varchar(42),
+    from_address bytea,
+    to_address bytea,
     value numeric(38),
-    input text,
-    output text,
-    trace_type varchar(16),
-    call_type varchar(16),
-    reward_type varchar(16),
+    input bytea,
+    output bytea,
+    trace_type bytea,
+    call_type bytea,
+    reward_type bytea,
     gas bigint,
     gas_used bigint,
     subtraces bigint,
@@ -18,6 +18,6 @@ create table traces
     status int,
     block_timestamp timestamp,
     block_number bigint,
-    block_hash varchar(66),
+    block_hash bytea,
     trace_id text
 );

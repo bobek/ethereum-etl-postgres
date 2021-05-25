@@ -1,6 +1,6 @@
 create table contracts
 (
-    address varchar(42),
-    bytecode text,
-    function_sighashes text[]
+    address bytea,
+    bytecode bytea,
+    function_sighashes bytea[]
 );
